@@ -38,7 +38,7 @@ jobs:
         run: yarn build
         
       - name: Install surge
-        run: npx install -g surge
+        run: npm install -g surge
         
       - name: Deploying surge
         run: surge ./build http://bootcamp_class_01_ass_1.surge.sh/ --token ${{secrets.ASS_2}}
